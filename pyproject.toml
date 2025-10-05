@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[project]
+name = "pyorm"
+description = "Simple Python ORM"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+authors = [
+    { name = "Christopher Good", email = "csgoodjr@gmail.com" }
+]
+keywords = ["orm", "database", "python"]
